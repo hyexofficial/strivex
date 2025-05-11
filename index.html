@@ -131,37 +131,6 @@
   @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
 }
 
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-    }
-    .audio-controls {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 10px 15px;
-      backdrop-filter: blur(5px);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      display: flex;
-      gap: 10px;
-    }
-    .audio-controls button {
-      background-color: rgba(255, 255, 255, 0.2);
-      border: none;
-      border-radius: 8px;
-      color: white;
-      padding: 8px 12px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.3s ease;
-    }
-    .audio-controls button:hover {
-      background-color: rgba(255, 255, 255, 0.4);
-    }
-
 </style>
 </head>
 <body>
@@ -170,34 +139,6 @@
   <source src="STRLGHT - RATHER BE ALONE, GODSPEED ｜ Hopeful, Eccentric ｜ House, Trap, Action.mp3" type="audio/mpeg">
   Tu navegador no soporta el audio.
 </audio>
-
-<div class="audio-controls">
-  <button onclick="togglePlay()">Pausar</button>
-  <button onclick="toggleMute()">Mutear</button>
-</div>
-
-<script>
-  const audio = document.getElementById('bgMusic');
-  const playBtn = document.querySelector('.audio-controls button:nth-child(1)');
-  const muteBtn = document.querySelector('.audio-controls button:nth-child(2)');
-
-  function togglePlay() {
-    if (audio.paused) {
-      audio.play();
-      playBtn.textContent = 'Pausar';
-    } else {
-      audio.pause();
-      playBtn.textContent = 'Reanudar';
-    }
-  }
-
-  function toggleMute() {
-    audio.muted = !audio.muted;
-    muteBtn.textContent = audio.muted ? 'Desmutear' : 'Mutear';
-  }
-</script>
-
-
 
 <script>var shopcartSettings = {"shopcart_top_offset":120,"side_offset":20,"site_width":1150,"shopcart_icon_color":"#FFFFFF","shopcart_back_color":"#000000","shopcart_icon_size":30,"sc_count_color":"#FFFFFF","sc_count_back_color":"#F97352","sc_count_size":12,"checkout_button":"Pay with <img src=\"assets/shopping-cart/paypal_btn.svg\" alt=\"PayPal\">","cartTitle":"Your Order:","popup_button":"Buy Now              "};</script>
   
